@@ -13,7 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Tajawal:wght@500;700;800;900&display=swap"
         rel="stylesheet">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -27,8 +27,8 @@
                 <li><a href="#">الرئيسية</a></li>
                 <li><a href="#about">الشركة</a></li>
                 <li><a href="#work-fields">مجالات العمل</a></li>
-                <li><a href="/Pages/Projects/">المشروعات</a></li>
-                <li><a href="#certificates">الشهادات</a></li>
+                <li><a href="Pages/Projects/">المشروعات</a></li>
+                <li><a href="Pages/certificates/">الشهادات</a></li>
             </ul>
             <div class="menu-toggle" id="mobile-menu">
                 <i class="ph ph-list"></i>
@@ -52,13 +52,13 @@
                 <p class="hero-title-en">Your Trusted Partner in Construction & Infrastructure</p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-outline">تواصل معنا</a>
-                    <a href="/Pages/Projects/" class="btn btn-primary">المشروعات</a>
+                    <a href="Pages/Projects/" class="btn btn-primary">المشروعات</a>
                 </div>
             </div>
 
             <div class="hero-logo-side">
                 <div class="hero-logo-wrapper">
-                    <img src="/assets/img/logo.webp" alt="Milaf Saudi Logo" class="hero-logo">
+                    <img src="assets/img/logo.webp" alt="Milaf Saudi Logo" class="hero-logo">
                 </div>
             </div>
         </div>
@@ -115,22 +115,32 @@
                 </div>
                 <div class="clients-container">
                     <h3 class="clients-title-mini">بعض عملائنا</h3>
-                    <div class="clients-grid">
-                    <div class="client-circle"><img src="/assets/img/eeaa.webp" alt="الشركة السعودية للكهرباء"></div>
-                    <div class="client-circle"><img src="/assets/img/moe.webp" alt="وزارة التعليم"></div>
-                    <div class="client-circle"><img src="/assets/img/momah.webp" alt="وزارة الشؤون البلدية والقروية">
+                    <div class="marquee-container">
+                        <div class="marquee-track">
+                            <!-- Original Set -->
+                            <div class="client-circle"><img src="assets/img/eeaa.webp" alt="الشركة السعودية للكهرباء"></div>
+                            <div class="client-circle"><img src="assets/img/moe.webp" alt="وزارة التعليم"></div>
+                            <div class="client-circle"><img src="assets/img/momah.webp" alt="وزارة الشؤون البلدية والقروية"></div>
+                            <div class="client-circle"><img src="assets/img/nhc.webp" alt="الوطنية للإسكان"></div>
+                            <div class="client-circle"><img src="assets/img/nwc.webp" alt="شركة المياه الوطنية"></div>
+                            <div class="client-circle"><img src="assets/img/tbc.webp" alt="شركة تطوير المباني"></div>
+                            <div class="client-circle"><img src="assets/img/moe.webp" alt="وزارة البيئة والمياه والزراعة"></div>
+                            <div class="client-circle"><img src="assets/img/stc.webp" alt="STC"></div>
+                            <!-- Duplicated Set for Seamless Loop -->
+                            <div class="client-circle"><img src="assets/img/eeaa.webp" alt="الشركة السعودية للكهرباء"></div>
+                            <div class="client-circle"><img src="assets/img/moe.webp" alt="وزارة التعليم"></div>
+                            <div class="client-circle"><img src="assets/img/momah.webp" alt="وزارة الشؤون البلدية والقروية"></div>
+                            <div class="client-circle"><img src="assets/img/nhc.webp" alt="الوطنية للإسكان"></div>
+                            <div class="client-circle"><img src="assets/img/nwc.webp" alt="شركة المياه الوطنية"></div>
+                            <div class="client-circle"><img src="assets/img/tbc.webp" alt="شركة تطوير المباني"></div>
+                            <div class="client-circle"><img src="assets/img/moe.webp" alt="وزارة البيئة والمياه والزراعة"></div>
+                            <div class="client-circle"><img src="assets/img/stc.webp" alt="STC"></div>
+                        </div>
                     </div>
-                    <div class="client-circle"><img src="/assets/img/nhc.webp" alt="الوطنية للإسكان"></div>
-                    <div class="client-circle"><img src="/assets/img/nwc.webp" alt="شركة المياه الوطنية"></div>
-                    <div class="client-circle"><img src="/assets/img/tbc.webp" alt="شركة تطوير المباني"></div>
-                    <div class="client-circle"><img src="/assets/img/moe.webp" alt="وزارة البيئة والمياه والزراعة">
-                    </div>
-                    <div class="client-circle"><img src="/assets/img/stc.webp" alt="STC"></div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
     <!-- 2. About Section (Classic Split Layout) -->
     <section id="about" class="about-section">
         <div class="container about-container">
@@ -142,12 +152,12 @@
                     اﻟﻤﻘﺎوﻻت ﻓﻲ اﻟﻤﻤﻠﻜﺔ اﻟﻌﺮﺑﻴﺔ اﻟﺴﻌﻮدﻳﺔ - ﻋﻠﻰ اﻟﻤﺪى اﻟﻘﺼﻴﺮ - وﻓﻖ أﻫﺪاف رؤﻳﺔ اﻟﻤﻤﻠﻜﺔ ٢٠٣٠، وﻣﺎ ﺳﺘﻄﺮﺣ
                     ﻪ ﻣﻦ ﻓﺮص اﺳﺘﺜﻤﺎرﻳﺔ واﻋﺪة ﻓﻲ ﻗﻄﺎع اﻟﺘﺸﻴﻴﺪ واﻟﺒﻨﺎء اﻟﺒﻨﻴﺔ اﻟﺘﺤﺘﻴﺔ ، ﻣﻊ اﺳﺘﻤﺮار اﻻﻟﺘﺰام ﺑﺄﻗﺼﻰ درﺟﺎت
                     اﻟﺠﻮدة واﻹﺗﻘـــــــــــــــــــــــﺎن </p>
-                <a href="#" class="read-more">ملف الشركة الكامل <i class="ph ph-arrow-left"></i></a>
+                <!-- <a href="./assets/img/Profile.pdf" target="_blank" class="read-more"><span>ملف الشركة الكامل</span> <i
+                        class="ph-fill ph-file-pdf"></i></a> -->
             </div>
             <div class="about-image">
                 <div class="image-wrapper">
-                    <img src="./assets/img/Vision.webp"
-                        alt="Construction Site" class="ceo-img">
+                    <img src="./assets/img/Vision.webp" alt="Construction Site" class="ceo-img">
                 </div>
             </div>
         </div>
@@ -157,7 +167,7 @@
     <section class="director-section">
         <div class="director-image-side">
             <div class="director-image-frame">
-                <img src="/assets/img/eng.webp" alt="General Director" class="director-img-element">
+                <img src="assets/img/eng.webp" alt="General Director" class="director-img-element">
                 <div class="director-frame-overlay"></div>
             </div>
         </div>
@@ -518,7 +528,7 @@
                 </div>
             </div>
             <div class="text-center mt-xl">
-                <a href="/Pages/Projects/" class="btn btn-primary">عرض جميع المشروعات</a>
+                <a href="Pages/Projects/" class="btn btn-primary">عرض جميع المشروعات</a>
             </div>
         </div>
     </section>
@@ -551,7 +561,7 @@
                 </div>
             </div>
             <div class="text-center mt-xl">
-                <a href="/Pages/certificates/" class="btn btn-primary">عرض جميع الشهادات والاعتمادات</a>
+                <a href="Pages/certificates/" class="btn btn-primary">عرض جميع الشهادات والاعتمادات</a>
             </div>
         </div>
     </section>
@@ -571,7 +581,7 @@
                     <ul class="footer-links">
                         <li><a href="#about">نبذة عن الشركة</a></li>
                         <li><a href="#work-fields">مجالات العمل</a></li>
-                        <li><a href="/Pages/Projects/">المشروعات</a></li>
+                        <li><a href="Pages/Projects/">المشروعات</a></li>
                         <li><a href="#equipment">بيان المعدات</a></li>
                     </ul>
                 </div>
