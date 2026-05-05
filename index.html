@@ -30,6 +30,9 @@
                 <li><a href="/Pages/Projects/">المشروعات</a></li>
                 <li><a href="#certificates">الشهادات</a></li>
             </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="ph ph-list"></i>
+            </div>
             <a href="#contact" class="btn-primary-small">تواصل معنا</a>
         </div>
     </nav>
@@ -449,6 +452,7 @@
     </section>
 
     <script>
+        // Equipment Slider Logic
         const slider = document.getElementById('eqSlider');
         const nextBtn = document.getElementById('eqNextBtn');
         const prevBtn = document.getElementById('eqPrevBtn');
@@ -459,6 +463,14 @@
 
         prevBtn.addEventListener('click', () => {
             slider.scrollBy({ left: 400, behavior: 'smooth' });
+        });
+
+        // Mobile Menu Logic
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
         });
     </script>
 

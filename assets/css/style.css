@@ -532,6 +532,32 @@ ul {
 .nav-links a:hover::after {
   width: 100%;
 }
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: var(--color-white);
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .nav-links.active {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background: var(--color-bg-main);
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    z-index: 1000;
+    gap: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+}
 .hero {
   position: relative;
   height: 100vh;
@@ -768,18 +794,6 @@ ul {
 }
 .about-image {
   position: relative;
-}
-.about-image::after {
-  content: "";
-  position: absolute;
-  top: 30px;
-  left: -30px;
-  width: 100%;
-  height: 100%;
-  background: var(--color-gold-gradient);
-  border-radius: 4px 120px 4px 120px;
-  z-index: 1;
-  opacity: 0.6;
 }
 .ceo-img {
   width: 100%;
@@ -1577,19 +1591,31 @@ ul {
   }
 }
 @media (max-width: 768px) {
-  .section-title {
-    font-size: 2.25rem;
+  section {
+    padding: 60px 0 !important;
   }
-  .hero-title-ar {
-    font-size: 2.5rem;
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  .certificate-item {
+    width: 100%;
+    max-width: 320px;
+    padding: 30px 20px;
+  }
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .vision-grid-layout {
+    gap: 40px;
   }
   .about-container {
     grid-template-columns: 1fr;
-    gap: 50px;
+    gap: 40px;
   }
   .about-image {
     order: -1;
-    margin-bottom: 20px;
   }
   .stat-cards-wrapper,
   .services-grid,
@@ -1599,12 +1625,19 @@ ul {
   }
   .values-flex {
     flex-direction: column;
+    gap: 15px;
   }
   .stat-cards-section {
-    margin-top: -40px;
+    margin-top: -30px;
+    margin-bottom: 40px;
   }
   .hero-buttons {
     flex-direction: column;
+    width: 100%;
+  }
+  .hero-buttons .btn {
+    width: 100%;
+    text-align: center;
   }
   .nav-links,
   .btn-primary-small {
@@ -1612,10 +1645,10 @@ ul {
   }
   .footer-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 30px;
   }
   .message-desc-ar {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .director-text-side {
     padding: 40px 20px;
@@ -1625,6 +1658,16 @@ ul {
   }
   .director-scrollable-text p:first-child {
     font-size: 1.2rem;
+  }
+  .hero {
+    padding-top: 100px;
+    height: auto;
+    min-height: 100vh;
+  }
+  .hero-content-split {
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 40px;
   }
 }
 
