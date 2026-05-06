@@ -1001,8 +1001,20 @@ ul {
   position: relative;
   z-index: 2;
   padding: 20px 0;
-  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
 }
 .marquee-track {
   display: flex;
@@ -1014,15 +1026,24 @@ ul {
   animation-play-state: paused;
 }
 @keyframes scrollMarquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(50%); } /* RTL: translate positive 50% to scroll right */
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  } /* RTL: translate positive 50% to scroll right */
 }
 @keyframes floatLogo {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
 }
 .client-circle {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.322);
   border: 1px solid rgba(198, 163, 0, 0.2);
   border-radius: 20px;
   width: 130px;
@@ -1033,7 +1054,9 @@ ul {
   justify-content: center;
   overflow: hidden;
   padding: 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2), inset 0 0 20px rgba(255, 255, 255, 0.5);
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.2),
+    inset 0 0 20px rgba(255, 255, 255, 0.5);
   transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
   animation: floatLogo 6s ease-in-out infinite;
   position: relative;
@@ -1050,7 +1073,10 @@ ul {
 .client-circle::before {
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   border-radius: inherit;
   box-shadow: 0 0 0 0 rgba(198, 163, 0, 0);
   transition: all 0.5s ease;
@@ -1060,7 +1086,9 @@ ul {
   transform: translateY(-10px) scale(1.05) !important;
   background: #ffffff;
   border-color: var(--color-accent-gold-solid);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(198, 163, 0, 0.4);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.3),
+    0 0 30px rgba(198, 163, 0, 0.4);
   z-index: 10;
 }
 .client-circle:hover::before {

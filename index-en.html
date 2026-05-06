@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milaf Saudi | General Contracting</title>
+    <meta name="description" content="Milaf Saudi - Your Trusted Partner in Construction & Infrastructure.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Tajawal:wght@500;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Comprehensive LTR Alignment Fixes */
+        .hero-text-side,
+        .vision-text-content,
+        .about-text,
+        .director-text-side,
+        .footer-col,
+        .stat-texts,
+        .goal-simple-content,
+        .contact-info li {
+            text-align: left !important;
+        }
+
+        .title-underline,
+        .footer-heading::after {
+            margin-left: 0 !important;
+            margin-right: auto !important;
+            left: 0 !important;
+            right: auto !important;
+        }
+
+        .center-underline {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .hero-buttons {
+            justify-content: flex-start !important;
+        }
+
+        .stat-card {
+            flex-direction: row !important;
+        }
+
+        .goal-simple-card {
+            border-right: 1px solid rgba(255, 255, 255, 0.05) !important;
+            border-left: 4px solid var(--color-accent-gold-solid) !important;
+            transform-origin: left;
+        }
+
+        .goal-simple-card:hover {
+            transform: translateX(10px) !important;
+        }
+
+        .nav-links a::after {
+            left: 0 !important;
+            right: auto !important;
+        }
+
+        .footer-links a:hover {
+            transform: translateX(8px) !important;
+        }
+
+        .nav-links {
+            order: 2;
+        }
+
+        .nav-actions {
+            order: 3;
+        }
+
+        .menu-toggle {
+            order: 4;
+        }
+
+        .logo {
+            order: 1;
+        }
+
+        /* Mobile-specific adjustments for English layout */
+        @media (max-width: 991px) {
+            .director-section {
+                flex-direction: column;
+                height: auto;
+                min-height: auto;
+            }
+
+            .director-image-side {
+                width: 100%;
+                height: 400px;
+                padding: 20px;
+            }
+
+            .director-text-side {
+                width: 100%;
+                padding: 40px 20px;
+            }
+
+            .director-scrollable-text {
+                max-height: none;
+                overflow: visible;
+                padding: 0;
+            }
+
+            .director-scrollable-text p {
+                margin-bottom: 20px;
+                text-align: left !important;
+            }
+        }
+
+        .director-scrollable-text p {
+            margin-bottom: 25px;
+            line-height: 1.8;
+            color: var(--color-text-dark);
+        }
+
+        /* English slide content alignment */
+        .eq-slide-content {
+            text-align: left !important;
+            left: 40px !important;
+            right: auto !important;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                justify-content: space-between;
+            }
+
+            .nav-actions {
+                margin-right: 15px;
+            }
+
+            .stat-cards-wrapper {
+                gap: 15px;
+            }
+
+            .hero-title-ar {
+                font-size: 2.5rem !important;
+            }
+        }
+
+        /* Marquee direction for English */
+        @keyframes scrollMarquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Mobile Scroll Hint for Equipment Section */
+        .mobile-scroll-hint {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-scroll-hint {
+                display: flex;
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 100;
+                background: var(--color-accent-gold-solid);
+                color: var(--color-bg-main);
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 0 15px rgba(198, 163, 0, 0.5);
+                animation: hintBounce 2s infinite;
+                pointer-events: none;
+                opacity: 0.9;
+            }
+
+            @keyframes hintBounce {
+                0%, 20%, 50%, 80%, 100% { transform: translateY(-50%) translateX(0); }
+                40% { transform: translateY(-50%) translateX(-10px); }
+                60% { transform: translateY(-50%) translateX(-5px); }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-text">MILAF <span class="gold-text">SAUDI</span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">Company</a></li>
+                <li><a href="#work-fields">Work Fields</a></li>
+                <li><a href="Pages/Projects/">Projects</a></li>
+                <li><a href="Pages/certificates/">Certificates</a></li>
+            </ul>
+            <div class="nav-actions" style="display: flex; gap: 15px; align-items: center;">
+                <a href="index.html" class="lang-switch"
+                    style="color: var(--color-white); font-weight: 500; display: flex; align-items: center; gap: 5px; opacity: 0.8; transition: opacity 0.3s;">
+                    Arabic <i class="ph ph-globe"></i>
+                </a>
+                <a href="#contact" class="btn-primary-small">Contact Us</a>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="ph ph-list"></i>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero animate-fade-in">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-pattern"></div>
+        <div class="hero-decoration decoration-1"></div>
+        <div class="hero-decoration decoration-2"></div>
+        <div class="hero-decoration decoration-3"></div>
+
+        <div class="container hero-content-split">
+            <div class="hero-text-side">
+                <h1 class="hero-title-ar" style="font-size: 3.5rem;">Your Trusted Partner in <span
+                        class="gold-text">Construction</span> & Infrastructure</h1>
+                <p class="hero-title-en">Milaf Saudi - Your Trusted Partner</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-outline">Contact Us</a>
+                    <a href="Pages/Projects/" class="btn btn-primary">Projects</a>
+                </div>
+            </div>
+
+            <div class="hero-logo-side">
+                <div class="hero-logo-wrapper">
+                    <img src="assets/img/logo.webp" alt="Milaf Saudi Logo" class="hero-logo">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stat Cards Section -->
+    <section class="stat-cards-section animate-fade-in">
+        <div class="container">
+            <div class="stat-cards-wrapper">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="ph ph-crown"></i></div>
+                    <div class="stat-texts">
+                        <h3 class="stat-ar" style="font-size: 1.1rem;">First Class Rating</h3>
+                        <span class="stat-en">Classification</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="ph ph-calendar-check"></i></div>
+                    <div class="stat-texts">
+                        <h3 class="stat-ar" style="font-size: 1.1rem;">Since 2000</h3>
+                        <span class="stat-en">Established</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="ph ph-buildings"></i></div>
+                    <div class="stat-texts">
+                        <h3 class="stat-ar" style="font-size: 1.1rem;">+20 Projects</h3>
+                        <span class="stat-en">Completed Projects</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1. Our Vision Section (History & Clients) -->
+    <section class="vision-section">
+        <div class="container">
+            <div class="vision-grid-layout">
+                <div class="vision-text-content">
+                    <h2 class="section-title" style="font-size: 2.2rem;">About The Company</h2>
+                    <div class="title-underline"></div>
+                    <p class="vision-paragraph">
+                        Milaf Saudi Company for General Contracting, Construction, Communications, Electricity, Gas, and
+                        Water Installations was established on January 20, 1432 AH (corresponding to 2011 CE), though it
+                        began
+                        operations as a company in 1421 AH (2000 CE) by its founder, Engineer Abdulaziz bin Nayef bin
+                        Tuwaili.
+                        Its primary activity was general contracting, and it achieved a first-class classification. From
+                        its
+                        inception, it contributed to driving the country's economy and implementing the urban
+                        development
+                        plan through participation in numerous construction and infrastructure projects for various
+                        governmental, semi-governmental, and private sectors. </p>
+                </div>
+                <div class="clients-container">
+                    <h3 class="clients-title-mini">Some of our clients</h3>
+                    <div class="marquee-container">
+                        <div class="marquee-track">
+                            <!-- Original Set -->
+                            <div class="client-circle"><img src="assets/img/eeaa.webp" alt="Saudi Electricity Company">
+                            </div>
+                            <div class="client-circle"><img src="assets/img/moe.webp" alt="Ministry of Education"></div>
+                            <div class="client-circle"><img src="assets/img/momah.webp"
+                                    alt="Ministry of Municipal and Rural Affairs"></div>
+                            <div class="client-circle"><img src="assets/img/nhc.webp" alt="National Housing Company">
+                            </div>
+                            <div class="client-circle"><img src="assets/img/nwc.webp" alt="National Water Company">
+                            </div>
+                            <div class="client-circle"><img src="assets/img/tbc.webp" alt="Tatweer Buildings Company">
+                            </div>
+                            <div class="client-circle"><img src="assets/img/moe.webp"
+                                    alt="Ministry of Environment, Water and Agriculture"></div>
+                            <div class="client-circle"><img src="assets/img/stc.webp" alt="STC"></div>
+                            <!-- Duplicated Set for Seamless Loop -->
+                            <div class="client-circle"><img src="assets/img/eeaa.webp" alt="Saudi Electricity Company">
+                            </div>
+                            <div class="client-circle"><img src="assets/img/moe.webp" alt="Ministry of Education"></div>
+                            <div class="client-circle"><img src="assets/img/momah.webp"
+                                    alt="Ministry of Municipal and Rural Affairs"></div>
+                            <div class="client-circle"><img src="assets/img/nhc.webp" alt="National Housing Company">
+                            </div>
+                            <div class="client-circle"><img src="assets/img/nwc.webp" alt="National Water Company">
+                            </div>
+                            <div class="client-circle"><img src="assets/img/tbc.webp" alt="Tatweer Buildings Company">
+                            </div>
+                            <div class="client-circle"><img src="assets/img/moe.webp"
+                                    alt="Ministry of Environment, Water and Agriculture"></div>
+                            <div class="client-circle"><img src="assets/img/stc.webp" alt="STC"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. About Section (Classic Split Layout) -->
+    <section id="about" class="about-section">
+        <div class="container about-container">
+            <div class="about-text">
+                <h2 class="section-title" style="font-size: 2.2rem;">Our Vision</h2>
+                <div class="title-underline"></div>
+                <p class="about-desc-ar" style="font-size: 1.15rem;">
+                    With its resources, capabilities, and experience, Milaf Saudi Company aspires to be among the
+                    top contracting companies in the Kingdom of Saudi Arabia in the short term, in line with the goals
+                    of Vision 2030 and the promising investment opportunities it will offer in the construction and
+                    infrastructure sector, while maintaining its commitment to the highest standards of quality and
+                    excellence.
+                </p>
+            </div>
+            <div class="about-image">
+                <div class="image-wrapper">
+                    <img src="./assets/img/Vision.webp" alt="Construction Site" class="ceo-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Director Speech Section (100vh Split Screen) -->
+    <section class="director-section">
+        <div class="director-image-side">
+            <div class="director-image-frame">
+                <img src="assets/img/eng.webp" alt="General Director" class="director-img-element">
+                <div class="director-frame-overlay"></div>
+            </div>
+        </div>
+        <div class="director-text-side">
+            <div class="director-content">
+                <div class="section-icon"><i class="ph-fill ph-quotes"></i></div>
+                <h2 class="section-title" style="font-size: 2.2rem;">General Director's speech</h2>
+                <div class="title-underline"></div>
+
+                <div class="director-scrollable-text" style="font-size: 1.05rem;">
+                    <p>Milaf Saudi Company was established as an institution in 1421H and later transformed on
+                        20/1/1432H into a leading company, continuing its journey of serving clients while contributing
+                        to the development of the nation and supporting construction and infrastructure projects across
+                        the Kingdom of Saudi Arabia, in alignment with Saudi Vision 2030 and during the prosperous era
+                        of the Custodian of the Two Holy Mosques, King Salman bin Abdulaziz Al Saud, and His Royal
+                        Highness Crown Prince Mohammed bin Salman bin Abdulaziz – may God preserve them.</p>
+
+                    <p>Since our inception, we have placed serving the nation, our clients, and our partners at the
+                        heart of our priorities, driven by a clear vision founded on continuous development and keeping
+                        pace with the latest technologies in construction, building, and infrastructure, ensuring the
+                        delivery of our projects to the highest standards of quality and efficiency.</p>
+
+                    <p>Believing that true excellence is built upon expertise and capability, we have remained committed
+                        to attracting top professional talent and building integrated technical and administrative teams
+                        led by elite engineers and specialists, ensuring outstanding performance and strengthening our
+                        leadership position.</p>
+
+                    <p>At Milaf Saudi, we move confidently toward the future, striving to be a trusted partner in
+                        delivering exceptional projects while maintaining our unwavering commitment to quality, earning
+                        our clients’ trust, and achieving their satisfaction—principles that remain the foundation of
+                        our success and continued leadership.</p>
+                </div>
+
+                <div class="director-signature-minimal">
+                    <h4>Eng. Abdulaziz bin Nayef bin Tuwaili</h4>
+                    <span>General Manager and Founder</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Our Message Section (Solid Gold High Contrast Break) -->
+    <section class="message-section">
+        <div class="container">
+            <div class="message-content text-center">
+                <div class="section-icon-center dark-icon"><i class="ph ph-paper-plane-tilt"></i></div>
+                <h2 class="section-title dark-text" style="font-size: 2.2rem;">Our Message</h2>
+                <div class="title-underline center-underline dark-underline"></div>
+                <h3 class="message-desc-ar" style="font-size: 1.3rem;">
+                    Providing exceptional services, guided by a leading management vision, and delivering a high
+                    level of service and performance in the contracting, construction, building, operation,
+                    maintenance, and infrastructure sectors, for the mutual benefit of clients and partners.
+                    Keeping pace with technological advancements in the construction industry for the future.
+                    Elevating the level of service delivery in the field of operation and maintenance.
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Our Values Section (Minimalist Hover Bordered Cards) -->
+    <section class="values-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title" style="font-size: 2.2rem;">Our Values</h2>
+                <p class="section-subtitle">Our Core Values</p>
+                <div class="title-underline center-underline"></div>
+            </div>
+            <div class="values-flex">
+                <div class="value-item">
+                    <div class="value-watermark"><i class="ph ph-check-circle"></i></div>
+                    <h3 style="font-size: 1.1rem; line-height: 1.6;">
+                        Distinction as a first
+                        priority, mutual profit, and
+                        building high-quality
+                        projects for actors,
+                        customers and society,
+                        with the highest levels of
+                        construction and
+                        construction. </h3>
+                </div>
+                <div class="value-item">
+                    <div class="value-watermark"><i class="ph ph-handshake"></i></div>
+                    <h3 style="font-size: 1.1rem; line-height: 1.6;">
+                        Qualified and
+                        professional task
+                        forces with competence
+                        and expertise. </h3>
+                </div>
+                <div class="value-item">
+                    <div class="value-watermark"><i class="ph ph-shield-check"></i></div>
+                    <h3 style="font-size: 1.1rem; line-height: 1.6;">
+                        To meet the needs,
+                        wishes and aspirations of
+                        our clients </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Work Fields Section (Service Grid with Dark Glow) -->
+    <section id="work-fields" class="services-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title" style="font-size: 2.2rem;">Work Fields</h2>
+                <p class="section-subtitle">Areas of Expertise</p>
+                <div class="title-underline center-underline"></div>
+            </div>
+            <div class="services-classic-grid">
+                <div class="service-classic-item">
+                    <div class="s-classic-header">
+                        <i class="ph ph-buildings"></i>
+                        <h3>General Construction & Maintenance</h3>
+                    </div>
+                    <p>General construction, maintenance, operation, and restoration for all governmental and private
+                        sectors.</p>
+                </div>
+                <div class="service-classic-item">
+                    <div class="s-classic-header">
+                        <i class="ph ph-drop"></i>
+                        <h3>Water & Sewage Networks</h3>
+                    </div>
+                    <p>Extension, maintenance, and operation of water and sewage networks with the latest engineering
+                        standards.</p>
+                </div>
+                <div class="service-classic-item">
+                    <div class="s-classic-header">
+                        <i class="ph ph-waves"></i>
+                        <h3>Water & Sewage Plants</h3>
+                    </div>
+                    <p>Construction, maintenance, and operation of water and sewage plants to ensure efficiency and
+                        sustainability.</p>
+                </div>
+                <div class="service-classic-item">
+                    <div class="s-classic-header">
+                        <i class="ph ph-lightning"></i>
+                        <h3>Electricity Networks</h3>
+                    </div>
+                    <p>Extension of electricity networks and provision of integrated energy solutions for projects and
+                        new cities.</p>
+                </div>
+                <div class="service-classic-item">
+                    <div class="s-classic-header">
+                        <i class="ph ph-broadcast"></i>
+                        <h3>OSP Telecom Networks</h3>
+                    </div>
+                    <p>Development and extension of external telecommunications networks (OSP) using the latest
+                        technologies.</p>
+                </div>
+                <div class="service-classic-item">
+                    <div class="s-classic-header">
+                        <i class="ph ph-cloud-rain"></i>
+                        <h3>Stormwater Drainage</h3>
+                    </div>
+                    <p>Construction of advanced stormwater drainage networks to protect cities and facilities from rain
+                        risks.</p>
+                </div>
+                <div class="service-classic-item">
+                    <div class="s-classic-header">
+                        <i class="ph ph-crane"></i>
+                        <h3>Excavation & Backfilling</h3>
+                    </div>
+                    <p>Implementation of all excavation, backfilling, and replacement works with extreme precision.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Our Goals Section -->
+    <section class="goals-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title" style="font-size: 2.2rem;">Our Goals</h2>
+                <p class="section-subtitle">Our Objectives</p>
+                <div class="title-underline center-underline"></div>
+            </div>
+            <div class="goals-simple-grid">
+                <div class="goal-simple-card">
+                    <div class="goal-num-gold">01</div>
+                    <div class="goal-simple-content">
+                        <h3 style="font-size: 1.2rem;">Construction Development</h3>
+                        <p>Raising the levels of building and infrastructure to the highest engineering standards.</p>
+                    </div>
+                </div>
+                <div class="goal-simple-card">
+                    <div class="goal-num-gold">02</div>
+                    <div class="goal-simple-content">
+                        <h3 style="font-size: 1.2rem;">Expansion and Growth</h3>
+                        <p>Strategic expansion in all regions of the Kingdom to serve the largest customer base.</p>
+                    </div>
+                </div>
+                <div class="goal-simple-card">
+                    <div class="goal-num-gold">03</div>
+                    <div class="goal-simple-content">
+                        <h3 style="font-size: 1.2rem;">The Trusted Partner</h3>
+                        <p>To be the first choice for governmental and private entities and a place of permanent trust.
+                        </p>
+                    </div>
+                </div>
+                <div class="goal-simple-card">
+                    <div class="goal-num-gold">04</div>
+                    <div class="goal-simple-content">
+                        <h3 style="font-size: 1.2rem;">Attracting Customers</h3>
+                        <p>Building sustainable relationships and attracting more customers through performance
+                            excellence.</p>
+                    </div>
+                </div>
+                <div class="goal-simple-card">
+                    <div class="goal-num-gold">05</div>
+                    <div class="goal-simple-content">
+                        <h3 style="font-size: 1.2rem;">Quality and Safety</h3>
+                        <p>Achieving the highest standards of quality and occupational safety in all work sites.</p>
+                    </div>
+                </div>
+                <div class="goal-simple-card">
+                    <div class="goal-num-gold">06</div>
+                    <div class="goal-simple-content">
+                        <h3 style="font-size: 1.2rem;">Attracting Competencies</h3>
+                        <p>Investing in attracting and developing distinguished Saudi cadres to lead our projects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Equipment Section (Interactive Fleet Slider) -->
+    <section id="equipment" class="equipment-section slider-style">
+        <div class="container">
+            <div class="section-header text-center animate-fade-in">
+                <h2 class="section-title" style="font-size: 2.2rem;">Statement of Equipment</h2>
+                <p class="section-subtitle">Equipment Fleet</p>
+                <div class="title-underline center-underline"></div>
+            </div>
+        </div>
+
+        <div class="equipment-slider-wrapper" dir="ltr">
+            <div class="mobile-scroll-hint">
+                <i class="ph-bold ph-caret-right"></i>
+            </div>
+            <button class="slider-nav-btn prev-btn" id="eqPrevBtn" aria-label="Previous">
+                <i class="ph-bold ph-caret-left"></i>
+            </button>
+
+            <div class="eq-slider-container" id="eqSlider">
+                <div class="eq-slide-item">
+                    <img src="https://images.unsplash.com/photo-1579412691525-4676579899f8?q=80&w=600&auto=format&fit=crop"
+                        alt="Dump Truck">
+                    <div class="eq-slide-content">
+                        <div class="eq-slide-num">30</div>
+                        <h3>DUMP TRUCKS</h3>
+                        <p>Heavy Duty Transport</p>
+                    </div>
+                </div>
+                <div class="eq-slide-item">
+                    <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=600&auto=format&fit=crop"
+                        alt="Excavator">
+                    <div class="eq-slide-content">
+                        <div class="eq-slide-num">15</div>
+                        <h3>EXCAVATORS</h3>
+                        <p>Earthmoving Equipment</p>
+                    </div>
+                </div>
+                <div class="eq-slide-item">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=600&auto=format&fit=crop"
+                        alt="Loader">
+                    <div class="eq-slide-content">
+                        <div class="eq-slide-num">15</div>
+                        <h3>LOADERS</h3>
+                        <p>Loading Machinery</p>
+                    </div>
+                </div>
+                <div class="eq-slide-item">
+                    <img src="https://images.unsplash.com/photo-1586864387917-f749f5533bc0?q=80&w=600&auto=format&fit=crop"
+                        alt="Trailer">
+                    <div class="eq-slide-content">
+                        <div class="eq-slide-num">12</div>
+                        <h3>TRAILER TRUCKS</h3>
+                        <p>Heavy Haulage</p>
+                    </div>
+                </div>
+                <div class="eq-slide-item">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=600&auto=format&fit=crop"
+                        alt="Buldozer">
+                    <div class="eq-slide-content">
+                        <div class="eq-slide-num">09</div>
+                        <h3>BULDOZERS</h3>
+                        <p>Earthmoving Machinery</p>
+                    </div>
+                </div>
+                <div class="eq-slide-item">
+                    <img src="https://images.unsplash.com/photo-1533035353720-f1c6a75cd8ab?q=80&w=600&auto=format&fit=crop"
+                        alt="Compactor">
+                    <div class="eq-slide-content">
+                        <div class="eq-slide-num">06</div>
+                        <h3>COMPACTORS</h3>
+                        <p>Soil Compaction</p>
+                    </div>
+                </div>
+                <div class="eq-slide-item">
+                    <img src="https://images.unsplash.com/photo-1621905252507-b354bcadcabc?q=80&w=600&auto=format&fit=crop"
+                        alt="Grader">
+                    <div class="eq-slide-content">
+                        <div class="eq-slide-num">02</div>
+                        <h3>GRADERS</h3>
+                        <p>Surface Grading</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="slider-nav-btn next-btn" id="eqNextBtn" aria-label="Next">
+                <i class="ph-bold ph-caret-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <script>
+        // Equipment Slider Logic
+        const slider = document.getElementById('eqSlider');
+        const nextBtn = document.getElementById('eqNextBtn');
+        const prevBtn = document.getElementById('eqPrevBtn');
+
+        nextBtn.addEventListener('click', () => {
+            slider.scrollBy({ left: 400, behavior: 'smooth' }); // swapped directions for ltr
+        });
+
+        prevBtn.addEventListener('click', () => {
+            slider.scrollBy({ left: -400, behavior: 'smooth' });
+        });
+
+        // Hide mobile hint on scroll
+        slider.addEventListener('scroll', () => {
+            const hint = document.querySelector('.mobile-scroll-hint');
+            if (hint) {
+                hint.style.transition = 'opacity 0.5s ease';
+                hint.style.opacity = '0';
+                setTimeout(() => hint.remove(), 500);
+            }
+        }, { once: true });
+
+        // Mobile Menu Logic
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+    <!-- 9. Projects Section (Hover Overlay Gallery) -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header text-center animate-fade-in">
+                <h2 class="section-title" style="font-size: 2.2rem;">Projects</h2>
+                <p class="section-subtitle">Milaf Saudi Company has implemented many projects with the governmental and
+                    private sectors in the fields of education, housing, and infrastructure in most regions of the
+                    Kingdom of Saudi Arabia.</p>
+                <div class="title-underline center-underline"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1000&auto=format&fit=crop"
+                        alt="Project 1" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3 class="project-name">Schools Complex Project</h3>
+                            <p class="project-client">Ministry of Education</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=1000&auto=format&fit=crop"
+                        alt="Project 2" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3 class="project-name">Water Purification Plant</h3>
+                            <p class="project-client">Ministry of Environment and Water</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1590496793907-471a8f5ba062?q=80&w=1000&auto=format&fit=crop"
+                        alt="Project 3" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3 class="project-name">Infrastructure Development</h3>
+                            <p class="project-client">Riyadh Municipality</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-xl">
+                <a href="Pages/Projects/" class="btn btn-primary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Certificates Section (Floating Elevated Cards) -->
+    <section id="certificates" class="certificates-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title" style="font-size: 2.2rem;">Certificates & Accreditations</h2>
+                <p class="section-subtitle">Recognitions</p>
+                <div class="title-underline center-underline"></div>
+            </div>
+            <div class="certificates-grid">
+                <div class="certificate-item">
+                    <div class="cert-icon"><i class="ph-fill ph-certificate"></i></div>
+                    <h4 style="font-size: 1.1rem;">Contractor Classification Certificate</h4>
+                    <p>First Class</p>
+                </div>
+                <div class="certificate-item">
+                    <div class="cert-icon"><i class="ph-fill ph-seal-check"></i></div>
+                    <h4 style="font-size: 1.1rem;">ISO 9001</h4>
+                    <p>Quality Management</p>
+                </div>
+                <div class="certificate-item">
+                    <div class="cert-icon"><i class="ph-fill ph-shield-check"></i></div>
+                    <h4 style="font-size: 1.1rem;">ISO 45001</h4>
+                    <p>Occupational Health & Safety</p>
+                </div>
+            </div>
+            <div class="text-center mt-xl">
+                <a href="Pages/certificates/" class="btn btn-primary">View All Certificates</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <div class="logo">
+                        <span class="logo-text">MILAF <span class="gold-text">SAUDI</span></span>
+                    </div>
+                    <p class="footer-tagline">Your Trusted Partner in Construction & Infrastructure</p>
+                </div>
+                <div class="footer-col links-col">
+                    <h4 class="footer-heading">Site Map</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About the Company</a></li>
+                        <li><a href="#work-fields">Work Fields</a></li>
+                        <li><a href="Pages/Projects/">Projects</a></li>
+                        <li><a href="#equipment">Statement of Equipment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col contact-col">
+                    <h4 class="footer-heading">Contact Information</h4>
+                    <ul class="contact-info">
+                        <li><i class="ph ph-map-pin"></i> Riyadh – Kingdom of Saudi Arabia</li>
+                        <li><i class="ph ph-envelope-simple"></i> info@milafsaudi.com</li>
+                        <li><i class="ph ph-phone"></i> +966 56 099 9959</li>
+                    </ul>
+                </div>
+                <div class="footer-col social-col">
+                    <h4 class="footer-heading">Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+                        <a href="#"><i class="ph ph-twitter-logo"></i></a>
+                        <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Milaf Saudi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
