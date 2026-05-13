@@ -622,13 +622,31 @@ ul {
   }
   .nav-actions {
     display: flex !important;
-    gap: 10px !important;
+    gap: 15px !important;
+    order: 2;
+    margin-left: auto;
+    margin-right: 15px;
+  }
+  .lang-switch {
+    display: flex !important;
+    align-items: center;
+    gap: 8px;
+    visibility: visible !important;
+    opacity: 1 !important;
   }
   .nav-actions .btn-primary-small {
-    display: none !important; /* Hide contact button on mobile header */
+    display: none !important; 
   }
   .lang-switch span {
-    display: none; /* Hide 'English' text, keep icon if needed, or keep it short */
+    display: inline !important;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .menu-toggle {
+    order: 3;
+  }
+  .logo {
+    order: 1;
   }
   .navbar .nav-container {
     padding: 0;

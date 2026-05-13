@@ -85,24 +85,17 @@
             transform: translateX(8px) !important;
         }
 
-        .nav-links {
-            order: 2;
-        }
-
-        .nav-actions {
-    display: none !important; 
-  }
-  .menu-toggle {
-    display: block !important;
-    order: 3;
-  }
-
-        .logo {
-            order: 1;
-        }
+        /* Navigation order fixed for desktop */
+        .logo { order: 0; }
+        .nav-links { order: 0; }
+        .nav-actions { order: 0; }
 
         /* Mobile-specific adjustments for English layout */
         @media (max-width: 991px) {
+            .menu-toggle {
+                display: block !important;
+                order: 3;
+            }
             .director-section {
                 flex-direction: column;
                 height: auto;
