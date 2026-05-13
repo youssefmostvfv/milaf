@@ -12,9 +12,27 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Tajawal:wght@500;700;800;900&display=swap"
         rel="stylesheet">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="assets/css/style.css">
-    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#b8960c',
+                        'milaf-navy': '#1a2332',
+                        'milaf-blue': '#0077b6',
+                        'milaf-light': '#f5f7fa',
+                    },
+                    fontFamily: {
+                        heading: ['Tajawal', 'sans-serif'],
+                        body: ['Inter', 'Tajawal', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
     <!-- SEO & Multilingual -->
     <link rel="canonical" href="https://milafsaudi.com/" />
     <link rel="alternate" hreflang="ar" href="https://milafsaudi.com/" />
@@ -54,14 +72,14 @@
         <div class="hero-bg"></div>
         <div class="hero-overlay"></div>
         <div class="hero-pattern"></div>
-        
+
         <div class="container hero-content-split">
             <div class="hero-logo-side">
                 <div class="hero-logo-wrapper">
                     <img src="assets/img/logo.webp" alt="Milaf Saudi Logo" class="hero-logo">
                 </div>
             </div>
-            
+
             <div class="hero-text-side">
                 <h1 class="hero-title-ar">شريكك الموثوق في <span class="gold-text">البناء</span> والبنية التحتية</h1>
                 <p class="hero-title-en">Your Trusted Partner in Construction & Infrastructure</p>
@@ -87,92 +105,164 @@
                 <div class="stat-card">
                     <div class="stat-icon"><i class="ph ph-calendar-check"></i></div>
                     <div class="stat-texts">
-                        <h3 class="stat-ar">منذ 2000</h3>
-                        <span class="stat-en">Since 2000</span>
+                        <h3 class="stat-ar">+20 سنة خبرة</h3>
+                        <span class="stat-en">20+ Years Experience</span>
                     </div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-icon"><i class="ph ph-buildings"></i></div>
                     <div class="stat-texts">
-                        <h3 class="stat-ar">+20 مشروع</h3>
-                        <span class="stat-en">+20 Projects</span>
+                        <h3 class="stat-ar">+200 مشروع</h3>
+                        <span class="stat-en">200+ Projects</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- 1. Our Vision Section (History & Clients) -->
-    <section class="vision-section">
-        <div class="container">
-            <div class="vision-grid-layout">
-                <div class="vision-text-content">
-                    <h2 class="section-title">نبذة عن الشركة</h2>
-                    <div class="title-underline"></div>
-                    <p class="vision-paragraph">
-                        ﺗﺄﺳﺴﺖ ﺷﺮﻛﺔ ﻣﻴﻼف اﻟﺴﻌﻮدﻳﺔ ﻟﻠﻤﻘﺎوﻻت اﻟﻌﺎﻣﺔ واﻟﺒﻨﺎء واﻻﺗﺼﺎﻻت وﺗﻤﺪﻳﺪات اﻟﻜﻬﺮﺑﺎء واﻟﻐﺎز واﻟﻤﻴﺎه
-                        ﻓﻲ 20/ 1432/1ﻫـ وﺑﺪأت ﻧﺸﺎﻃﻬﺎ ﻗﺒﻞ ذﻟﻚ ﻛﻤﺆﺳﺴﺔ ﻓﻲ ﻋﺎم 1421ﻫـ، ﻋﻠﻰ ﻳﺪ ﻣﺆﺳﺴﻬﺎ اﻟﻤﻬﻨﺪس/ ﻋﺒ
-                        ﺪ اﻟﻌﺰﻳﺰ ﺑﻦ ﻧﺎﻳﻒ ﺑﻦ ﺗﻮﻳﻠﻲ وﻛﺎن ﻧﺸﺎﻃﻬﺎ اﻟﺮﺋﻴﺴﻲ اﻟﻤﻘﺎوﻻت اﻟﻌﺎﻣﺔ وﺗﻢ ﺣﺼﻮﻟﻬﺎ ﻋﻠﻰ ﺗﺼﻨﻴﻒ اﻟﺪرﺟﺔ اﻷوﻟﻰ
-                        و ﺳﺎﻫﻤﺖ ﻣﻨﺬ اﻟﻠﺤﻈﺔ اﻷوﻟﻰ ﻓﻲ دﻓﻊ ﻋﺠﻠﺔ اﻻﻗﺘﺼﺎد ﺑﺎﻟﺒﻼد وﺗﻨﻔﻴﺬ ﺧﻄﺔ اﻟﺘﻨﻤﻴﺔ اﻟﻌﻤﺮاﻧﻴﺔ، ﻣﻦ ﺧﻼل اﻟﻤﺸﺎرﻛ
-                        ﺔ ﻓﻲ ﻋﺪد ﻣﻦ اﻟﻤﺸﺮوﻋﺎت اﻹﻧﺸﺎﺋﻴﺔ واﻟﺒﻨﻴﺔ اﻟﺘﺤﺘﻴﺔ ، ﻟﻤﺨﺘﻠﻒ اﻟﻘﻄﺎﻋﺎت اﻟﺤﻜﻮﻣﻴﺔ وﺷﺒﻪ اﻟﺤﻜﻮﻣﻴ
-                        ﺔ واﻟﻘﻄﺎﻋﺎت اﻷﻫﻠﻴ </p>
-                    <!-- <p class="vision-paragraph">
-                        كان نشاطها الأساسي هو المقاولات العامة، وقد حصلت على تصنيف من الدرجة
-                        الأولى. ومنذ انطلاقتها، ساهمت في دعم اقتصاد الدولة من خلال تنفيذ خطط التنمية العمرانية عبر
-                        المشاركة في العديد من مشاريع البناء والبنية التحتية لمختلف القطاعات الحكومية، وشبه الحكومية،
-                        والقطاع الخاص.
-                    </p> -->
+    <section id="about-history" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <div class="mb-12">
+                    <h2 class="text-4xl font-black text-milaf-navy mb-4 font-heading border-r-8 border-gold pr-6">
+                        قصة نجاح ميلاف السعودية</h2>
+                    <p class="text-gold font-bold text-xl pr-6 italic">مسيرة من العطاء والإنجاز في قلب المملكة</p>
                 </div>
-                <div class="clients-container">
-                    <h3 class="clients-title-mini">بعض عملائنا</h3>
-                    <div class="marquee-container">
-                        <div class="marquee-track">
-                            <!-- Original Set -->
-                            <div class="client-circle"><img src="assets/img/eeaa.webp" alt="الشركة السعودية للكهرباء">
-                            </div>
-                            <div class="client-circle"><img src="assets/img/moe.webp" alt="وزارة التعليم"></div>
-                            <div class="client-circle"><img src="assets/img/momah.webp"
-                                    alt="وزارة الشؤون البلدية والقروية"></div>
-                            <div class="client-circle"><img src="assets/img/nhc.webp" alt="الوطنية للإسكان"></div>
-                            <div class="client-circle"><img src="assets/img/nwc.webp" alt="شركة المياه الوطنية"></div>
-                            <div class="client-circle"><img src="assets/img/tbc.webp" alt="شركة تطوير المباني"></div>
-                            <div class="client-circle"><img src="assets/img/moe.webp"
-                                    alt="وزارة البيئة والمياه والزراعة"></div>
-                            <div class="client-circle"><img src="assets/img/stc.webp" alt="STC"></div>
-                            <!-- Duplicated Set for Seamless Loop -->
-                            <div class="client-circle"><img src="assets/img/eeaa.webp" alt="الشركة السعودية للكهرباء">
-                            </div>
-                            <div class="client-circle"><img src="assets/img/moe.webp" alt="وزارة التعليم"></div>
-                            <div class="client-circle"><img src="assets/img/momah.webp"
-                                    alt="وزارة الشؤون البلدية والقروية"></div>
-                            <div class="client-circle"><img src="assets/img/nhc.webp" alt="الوطنية للإسكان"></div>
-                            <div class="client-circle"><img src="assets/img/nwc.webp" alt="شركة المياه الوطنية"></div>
-                            <div class="client-circle"><img src="assets/img/tbc.webp" alt="شركة تطوير المباني"></div>
-                            <div class="client-circle"><img src="assets/img/moe.webp"
-                                    alt="وزارة البيئة والمياه والزراعة"></div>
-                            <div class="client-circle"><img src="assets/img/stc.webp" alt="STC"></div>
+
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+                    <div class="md:col-span-8 space-y-8 text-xl leading-relaxed text-gray-700 font-medium">
+                        <div class="bg-milaf-light p-8 rounded-3xl border-r-4 border-milaf-blue shadow-sm">
+                            <p class="mb-6">
+                                وضعت شركة <span class="text-milaf-navy font-black">ميلاف السعودية</span> لبنتها الأولى
+                                في عام <span class="text-gold">1421هـ</span>، حيث انطلقت كمؤسسة طموحة على يد مؤسسها
+                                المهندس/ <span class="text-milaf-navy font-bold">عبدالعزيز بن نايف بن تويلي</span>.
+                                وبفضل الرؤية الثاقبة والالتزام الراسخ بالتميز، تطورت المؤسسة لتتحول إلى شركة كبرى في
+                                عام <span class="text-gold">1432هـ</span>، متخصصة في قطاعات حيوية تشمل المقاولات العامة،
+                                البناء، الاتصالات، وتمديدات الطاقة والغاز والمياه.
+                            </p>
+                        </div>
+
+                        <div class="space-y-6 pr-4 border-r-2 border-gray-100">
+                            <p>
+                                لم تكن مسيرتنا مجرد أرقام، بل كانت التزاماً وطنياً بدفع عجلة الاقتصاد في بلادنا
+                                الغالية. ومنذ اللحظة الأولى، ساهمت الشركة بفعالية في تنفيذ خطط التنمية العمرانية، حيث
+                                أثبتت كفاءتها في تنفيذ أضخم المشروعات الإنشائية ومشروعات البنية التحتية العملاقة.
+                            </p>
+                            <p>
+                                وبفضل هذا السجل الحافل بالنجاحات، نالت الشركة <span
+                                    class="text-milaf-navy font-bold underline decoration-gold decoration-4 underline-offset-8">تصنيف
+                                    الدرجة الأولى</span>، وهو وسام استحقاق يعكس قدرتنا على مواجهة التحديات الهندسية
+                                المعقدة وتقديم حلول متكاملة لمختلف القطاعات الحكومية وشبه الحكومية والقطاعات الأهلية
+                                الكبرى.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="md:col-span-4 space-y-6">
+                        <div
+                            class="p-6 bg-milaf-navy rounded-2xl text-white shadow-xl transform hover:-rotate-2 transition-transform">
+                            <div class="text-gold text-4xl mb-4"><i class="ph ph-shield-check"></i></div>
+                            <h4 class="font-bold text-xl mb-2">الاعتماد والجودة</h4>
+                            <p class="text-sm opacity-80">حاصلون على تصنيف الدرجة الأولى في تنفيذ مشروعات البنية
+                                التحتية والمقاولات العامة.</p>
+                        </div>
+                        <div
+                            class="p-6 bg-gold rounded-2xl text-milaf-navy shadow-xl transform hover:rotate-2 transition-transform">
+                            <div class="text-4xl mb-4"><i class="ph ph-strategy"></i></div>
+                            <h4 class="font-bold text-xl mb-2">رؤية وطنية</h4>
+                            <p class="text-sm opacity-90">شريك استراتيجي في تحقيق مستهدفات رؤية المملكة 2030 عبر تنفيذ
+                                مشاريع تنموية مستدامة.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- 2. About Section (Classic Split Layout) -->
-    <section id="about" class="about-section">
-        <div class="container about-container">
-            <div class="about-text">
-                <h2 class="section-title">رؤيتنا</h2>
-                <div class="title-underline"></div>
-                <p class="about-desc-ar">
-                    ﺗﺘﻄﻠﻊ ﺷﺮﻛﺔ ﻣﻴﻼف اﻟﺴﻌﻮدﻳﺔ، ﺑﻤﺎ ﺗﻤﻠﻜﻪ ﻣﻦ ﻣﻘﻮﻣﺎت وإﻣﻜﺎﻧﻴﺎت وﺧﺒﺮات، أن ﺗﻜﻮن ﺿﻤﻦ أﻓﻀﻞ ﺷﺮﻛﺎت
-                    اﻟﻤﻘﺎوﻻت ﻓﻲ اﻟﻤﻤﻠﻜﺔ اﻟﻌﺮﺑﻴﺔ اﻟﺴﻌﻮدﻳﺔ - ﻋﻠﻰ اﻟﻤﺪى اﻟﻘﺼﻴﺮ - وﻓﻖ أﻫﺪاف رؤﻳﺔ اﻟﻤﻤﻠﻜﺔ ٢٠٣٠، وﻣﺎ ﺳﺘﻄﺮﺣ
-                    ﻪ ﻣﻦ ﻓﺮص اﺳﺘﺜﻤﺎرﻳﺔ واﻋﺪة ﻓﻲ ﻗﻄﺎع اﻟﺘﺸﻴﻴﺪ واﻟﺒﻨﺎء اﻟﺒﻨﻴﺔ اﻟﺘﺤﺘﻴﺔ ، ﻣﻊ اﺳﺘﻤﺮار اﻻﻟﺘﺰام ﺑﺄﻗﺼﻰ درﺟﺎت
-                    اﻟﺠﻮدة واﻹﺗﻘـــــــــــــــــــــــﺎن </p>
-                <!-- <a href="./assets/img/Profile.pdf" target="_blank" class="read-more"><span>ملف الشركة الكامل</span> <i
-                        class="ph-fill ph-file-pdf"></i></a> -->
+    <!-- Clients Section -->
+    <section class="clients-section animate-fade-in">
+        <div class="container">
+            <div class="clients-container">
+                <h3 class="clients-title-mini">بعض عملائنا</h3>
+                <div class="marquee-container">
+                    <div class="marquee-track">
+                        <!-- Original Set -->
+                        <div class="client-circle"><img src="assets/img/eeaa.webp" alt="الشركة السعودية للكهرباء"></div>
+                        <div class="client-circle"><img src="assets/img/moe.webp" alt="وزارة التعليم"></div>
+                        <div class="client-circle"><img src="assets/img/momah.webp" alt="وزارة الشؤون البلدية والقروية"></div>
+                        <div class="client-circle"><img src="assets/img/nhc.webp" alt="الوطنية للإسكان"></div>
+                        <div class="client-circle"><img src="assets/img/nwc.webp" alt="شركة المياه الوطنية"></div>
+                        <div class="client-circle"><img src="assets/img/tbc.webp" alt="شركة تطوير المباني"></div>
+                        <div class="client-circle"><img src="assets/img/moe.webp" alt="وزارة البيئة والمياه والزراعة"></div>
+                        <div class="client-circle"><img src="assets/img/stc.webp" alt="STC"></div>
+                        <!-- Duplicated Set for Seamless Loop -->
+                        <div class="client-circle"><img src="assets/img/eeaa.webp" alt="الشركة السعودية للكهرباء"></div>
+                        <div class="client-circle"><img src="assets/img/moe.webp" alt="وزارة التعليم"></div>
+                        <div class="client-circle"><img src="assets/img/momah.webp" alt="وزارة الشؤون البلدية والقروية"></div>
+                        <div class="client-circle"><img src="assets/img/nhc.webp" alt="الوطنية للإسكان"></div>
+                        <div class="client-circle"><img src="assets/img/nwc.webp" alt="شركة المياه الوطنية"></div>
+                        <div class="client-circle"><img src="assets/img/tbc.webp" alt="شركة تطوير المباني"></div>
+                        <div class="client-circle"><img src="assets/img/moe.webp" alt="وزارة البيئة والمياه والزراعة"></div>
+                        <div class="client-circle"><img src="assets/img/stc.webp" alt="STC"></div>
+                    </div>
+                </div>
             </div>
-            <div class="about-image">
-                <div class="image-wrapper">
-                    <img src="./assets/img/Vision.webp" alt="Construction Site" class="ceo-img">
+        </div>
+    </section>
+
+    <!-- 1. About Us Section (History) -->
+
+    <!-- 2. About Section (Classic Split Layout) -->
+    <section id="vision" class="py-24 bg-milaf-light relative overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2 order-2 lg:order-1">
+                    <div class="mb-8">
+                        <h2 class="text-4xl font-black text-milaf-navy mb-4 font-heading">رؤيتنا وطموحنا</h2>
+                        <div class="w-20 h-1.5 bg-gold rounded-full"></div>
+                    </div>
+
+                    <div class="space-y-6 text-gray-700">
+                        <p class="text-xl font-bold text-milaf-navy leading-relaxed">
+                            ﻧﺘﻄﻠﻊ ﻓﻲ ﻣﻴﻼف اﻟﺴﻌﻮدﻳﺔ أن ﻧﻜﻮن اﻟﺨﻴﺎر اﻷول واﻟﺸﺮﻳﻚ اﻷﻛﺜﺮ ﻣﻮﺛﻮﻗﻴﺔ ﻓﻲ ﻗﻄﺎع اﻟﻤﻘﺎوﻻت واﻹﻧﺸﺎءات
+                            ﺑﺎﻟﻤﻤﻠﻜﺔ.
+                        </p>
+
+                        <p class="text-lg leading-relaxed text-justify">
+                            رؤيتنا تتجاوز مجرد البناء؛ نحن نسعى لصياغة معالم المستقبل من خلال مشاريع بنية تحتية ذكية
+                            ومستدامة. نرتكز في طموحنا على أهداف رؤية المملكة 2030، مستثمرين في الكفاءات الوطنية
+                            والتقنيات الحديثة لنقدم حلولاً هندسية متكاملة تسبق عصرها.
+                        </p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                            <div
+                                class="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm border-r-4 border-gold">
+                                <div class="text-gold text-2xl mt-1"><i class="ph-bold ph-rocket"></i></div>
+                                <div>
+                                    <h4 class="font-bold text-milaf-navy mb-1">الريادة المحلية</h4>
+                                    <p class="text-sm text-gray-500 text-justify">نسعى لنكون ضمن أفضل 10 شركات مقاولات
+                                        في المنطقة على المدى القريب.</p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm border-r-4 border-milaf-blue">
+                                <div class="text-milaf-blue text-2xl mt-1"><i class="ph-bold ph-medal"></i></div>
+                                <div>
+                                    <h4 class="font-bold text-milaf-navy mb-1">الجودة الشاملة</h4>
+                                    <p class="text-sm text-gray-500 text-justify">الالتزام بأعلى معايير الإتقان في كل
+                                        تفصيل، من التأسيس إلى التسليم.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 order-1 lg:order-2">
+                    <div class="relative">
+                        <div class="absolute -top-4 -right-4 w-24 h-24 bg-gold/10 rounded-full blur-2xl"></div>
+                        <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-milaf-blue/10 rounded-full blur-2xl"></div>
+                        <div class="rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
+                            <img src="./assets/img/Vision.webp" alt="Milaf Vision"
+                                class="w-full h-[500px] object-cover hover:scale-105 transition-transform duration-700">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -621,30 +711,30 @@
                 <p>&copy; 2026 Milaf Saudi. جميع الحقوق محفوظة.</p>
             </div>
         </div>
-    <script>
-        // Navbar Scroll Effect
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.remove('transparent');
-            } else {
-                navbar.classList.add('transparent');
+        <script>
+            // Navbar Scroll Effect
+            window.addEventListener('scroll', () => {
+                const navbar = document.querySelector('.navbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.remove('transparent');
+                } else {
+                    navbar.classList.add('transparent');
+                }
+            });
+
+            // Initial state
+            if (window.scrollY <= 50) {
+                document.querySelector('.navbar').classList.add('transparent');
             }
-        });
-        
-        // Initial state
-        if (window.scrollY <= 50) {
-            document.querySelector('.navbar').classList.add('transparent');
-        }
 
-        // Mobile Menu Logic
-        const menuToggle = document.getElementById('mobile-menu');
-        const navLinks = document.querySelector('.nav-links');
+            // Mobile Menu Logic
+            const menuToggle = document.getElementById('mobile-menu');
+            const navLinks = document.querySelector('.nav-links');
 
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-    </script>
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        </script>
 </body>
 
 </html>

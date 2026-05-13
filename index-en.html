@@ -13,7 +13,26 @@
         rel="stylesheet">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="assets/css/style.css">
-    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#b8960c',
+                        'milaf-navy': '#1a2332',
+                        'milaf-blue': '#0077b6',
+                        'milaf-light': '#f5f7fa',
+                    },
+                    fontFamily: {
+                        heading: ['Tajawal', 'sans-serif'],
+                        body: ['Inter', 'Tajawal', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
     <!-- SEO & Multilingual -->
     <link rel="canonical" href="https://milafsaudi.com/index-en.html" />
     <link rel="alternate" hreflang="ar" href="https://milafsaudi.com/" />
@@ -86,9 +105,17 @@
         }
 
         /* Navigation order fixed for desktop */
-        .logo { order: 0; }
-        .nav-links { order: 0; }
-        .nav-actions { order: 0; }
+        .logo {
+            order: 0;
+        }
+
+        .nav-links {
+            order: 0;
+        }
+
+        .nav-actions {
+            order: 0;
+        }
 
         /* Mobile-specific adjustments for English layout */
         @media (max-width: 991px) {
@@ -96,6 +123,7 @@
                 display: block !important;
                 order: 3;
             }
+
             .director-section {
                 flex-direction: column;
                 height: auto;
@@ -194,9 +222,22 @@
             }
 
             @keyframes hintBounce {
-                0%, 20%, 50%, 80%, 100% { transform: translateY(-50%) translateX(0); }
-                40% { transform: translateY(-50%) translateX(-10px); }
-                60% { transform: translateY(-50%) translateX(-5px); }
+
+                0%,
+                20%,
+                50%,
+                80%,
+                100% {
+                    transform: translateY(-50%) translateX(0);
+                }
+
+                40% {
+                    transform: translateY(-50%) translateX(-10px);
+                }
+
+                60% {
+                    transform: translateY(-50%) translateX(-5px);
+                }
             }
         }
     </style>
@@ -235,16 +276,17 @@
         <div class="hero-bg"></div>
         <div class="hero-overlay"></div>
         <div class="hero-pattern"></div>
-        
+
         <div class="container hero-content-split">
             <div class="hero-logo-side">
                 <div class="hero-logo-wrapper">
                     <img src="assets/img/logo.webp" alt="Milaf Saudi Logo" class="hero-logo">
                 </div>
             </div>
-            
+
             <div class="hero-text-side">
-                <h1 class="hero-title-ar">Your Trusted Partner in <span class="gold-text">Construction</span> & Infrastructure</h1>
+                <h1 class="hero-title-ar">Your Trusted Partner in <span class="gold-text">Construction</span> &
+                    Infrastructure</h1>
                 <p class="hero-title-en">MILAF SAUDI COMPANY - EXCELLENCE IN EVERY DETAIL</p>
                 <div class="hero-buttons">
                     <a href="Pages/Projects/" class="btn btn-primary">Our Projects</a>
@@ -837,30 +879,30 @@
                 <p>&copy; 2026 Milaf Saudi. All rights reserved.</p>
             </div>
         </div>
-    <script>
-        // Navbar Scroll Effect
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.remove('transparent');
-            } else {
-                navbar.classList.add('transparent');
+        <script>
+            // Navbar Scroll Effect
+            window.addEventListener('scroll', () => {
+                const navbar = document.querySelector('.navbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.remove('transparent');
+                } else {
+                    navbar.classList.add('transparent');
+                }
+            });
+
+            // Initial state
+            if (window.scrollY <= 50) {
+                document.querySelector('.navbar').classList.add('transparent');
             }
-        });
-        
-        // Initial state
-        if (window.scrollY <= 50) {
-            document.querySelector('.navbar').classList.add('transparent');
-        }
 
-        // Mobile Menu Logic
-        const menuToggle = document.getElementById('mobile-menu');
-        const navLinks = document.querySelector('.nav-links');
+            // Mobile Menu Logic
+            const menuToggle = document.getElementById('mobile-menu');
+            const navLinks = document.querySelector('.nav-links');
 
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-    </script>
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        </script>
 </body>
 
 </html>
